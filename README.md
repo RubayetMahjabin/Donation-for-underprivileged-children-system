@@ -1,5 +1,5 @@
 # Donation-for-underprivileged-children-system
-                                                                  Functional Requirements
+Functional Requirements
 
 
 Requirement 1:
@@ -74,8 +74,7 @@ Educational resources and success stories
 
 
 
-
-                                                          Non-Functional Requirements
+Non-Functional Requirements
 
 1) User-friendly interface.
 2) Authentication and authorization of users done.
