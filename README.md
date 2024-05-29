@@ -73,7 +73,9 @@ Educational resources and success stories
 5) Awareness Campaigns (educate visitors about the challenges faced by underprivileged children and the impact of donations)
 
 
-                                                           Non-Functional Requirements
+
+
+                                                          Non-Functional Requirements
 
 1) User-friendly interface.
 2) Authentication and authorization of users done.
