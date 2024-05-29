@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" sizes="16x16" href="assets/images/logo.png"/>
+    <meta charset="UTF-8">
+    <title>Children Donation | Login</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/manual.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-responsive.min.css">
+    <!-- Google fonts Poppins -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Fontello -->
+    <link rel="stylesheet" href="assets/css/css-fontello/animation.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/css/css-fontello/fontello.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/css/css-fontello/fontello-codes.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/css/css-fontello/fontello-embedded.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/css/css-fontello/fontello-ie7.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/css/css-fontello/fontello-ie7-codes.css" type="text/css"/>
+   
+
+</head>
+<body>
+
+<div class="page">
+
+    <!--=============================== Header ===========================-->
+    <div id="header"></div>
+
+    <!--=============================== Menu-Bar ========================-->
+    <div id="menuBar"></div>
+
+    <!--=============================== Banner ==========================-->
+    <div class="banner" style="background-image: url('assets/images/pic1.jpg');background-repeat: no-repeat;background-attachment: fixed;
+  background-size: cover;">
+        <div class="shadow-main">
+            <h1> Admin Login </h1>
+            <ul class="breadcrumb breadcrumb-news">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="admin_login.html">LOGIN</a></li>
+            </ul>
+        </div>
+    </div>
+    
+
+    <!-- Admin Login Section -->
+    <div class="main-contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3 col-xs-12">
+                    <div class="leave-reply">
+                        <div class="form-login">
+                            <h3>Admin Login</h3>
+                            <form class="login-form form-all" action="{{ url_for('admin_login') }}" method="POST">
+                                <!-- Alert Boxes for Invalid Login -->
+                                {% if invalid %}
+                                <div class="alert alert-danger" style="color: red;" role="alert">
+                                    Invalid username or password. Please try again.
+                                </div>
+                                {% endif %}
+                                
+                                <div class="form-group">
+                                    <input class="form-control" type="text" name="username" placeholder="Username" required/>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="password" name="password" placeholder="Password" required/>
+                                </div>
+                                <input type="submit" class="btn btn-primary" value="Log In">
+                            </form>
+                            
+                            <!-- Admin Logout Form -->
+                            {% if admin_id %}
+                            <form class="logout-form" action="{{ url_for('admin_logout') }}" method="GET">
+                                <button type="submit" class="btn btn-danger">Log Out</button>
+                            </form>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--=============================== Footer ===========================-->
+    <div id="footer"></div>
+
+</div><!-- /.page -->
+
+<!-- JS code -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/myScript.js"></script>
+<script>
+    "use strict";
+    $('.message a').click(function () {
+        $('form.form-all').animate({height: "toggle", opacity: "toggle"}, "slow");
+    });
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Volunteer Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFEBEE;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #D32F2F;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .dashboard {
+            margin: 20px;
+        }
+
+        .dashboard a {
+            display: block;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #EF9A9A;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .dashboard a:hover {
+            background-color: #C62828;
+        }
+
+        .logout {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .logout button {
+            background-color: #D32F2F;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .logout button:hover {
+            background-color: #B71C1C;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Volunteer Dashboard</h1>
+    </div>
+    <div class="dashboard">
+        <a href="/exp_display.html">Volunteer Community</a>
+        <a href="/volunteer_exp_input.html">Share Your Experience</a>
+        <a href="/volunteer_resource.html">Volunteer Resources</a>
+    </div>
+    <div class="row mt-4">
+        <div class="logout">
+            <button onclick="window.location.href='/volunteer_logout'">Logout</button>
+        </div>
+</body>
+</html>

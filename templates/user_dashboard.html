@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Volunteer Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFEBEE;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #D32F2F;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .dashboard {
+            margin: 20px;
+        }
+
+        .dashboard a {
+            display: block;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #EF9A9A;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .dashboard a:hover {
+            background-color: #C62828;
+        }
+
+        .logout {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .logout button {
+            background-color: #D32F2F;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .logout button:hover {
+            background-color: #B71C1C;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>User Dashboard</h1>
+    </div>
+    <div class="dashboard">
+        <a href="/profile.html">Profile</a>
+        <a href="/donate.html">Donate</a>
+        <a href="/our-causes.html">Our initiatives</a>
+        <a href="/list1.html">View Donation History</a>
+        <a href="/volunteer_rating.html">Volunteer Rating</a>
+        <a href="/view_story.html">Success Story page</a>
+        <a href="/top_donators.html">Top 3 Donars</a>
+    </div>
+    <div class="row mt-4">
+        <div class="logout">
+            <button onclick="window.location.href='/logout'">Logout</button>
+        </div>
+</body>
+</html>

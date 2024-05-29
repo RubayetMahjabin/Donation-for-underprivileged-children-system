@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Your head content here -->
+</head>
+<body>
+    <!-- Your header and navigation bar content here -->
+
+    <div class="container">
+        <h2>Post New Project</h2>
+        <form action="/post_project" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="project_title">Project Title</label>
+                <input type="text" class="form-control" id="project_title" name="project_title" required>
+            </div>
+            <div class="form-group">
+                <label for="project_description">Project Description</label>
+                <textarea class="form-control" id="project_description" name="project_description" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="project_goal">Project Goal (Amount in BDT)</label>
+                <input type="number" class="form-control" id="project_goal" name="project_goal" required>
+            </div>
+            <div class="form-group">
+                <label for="project_image">Project Image</label>
+                <input type="file" class="form-control" id="project_image" name="project_image" accept="image/*" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <!-- Your footer content here -->
+
+    <!-- Your JavaScript includes here -->
+</body>
+</html>

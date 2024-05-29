@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Your head content here -->
+</head>
+<body>
+    <!-- Your header and navigation bar content here -->
+
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="row">
+            {% for project in projects %}
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="{{ url_for('assets', filename='uploads/' + project[5]) }}" class="card-img-top" alt="{{ project[1] }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ project[1] }}</h5>
+                        <p class="card-text">{{ project[2] }}</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar"
+                                 style="width: {{ (project[4] / project[3]) * 100 }}%;"
+                                 aria-valuenow="{{ (project[4] / project[3]) * 100 }}"
+                                 aria-valuemin="0" aria-valuemax="100">
+                                {{ (project[4] / project[3]) * 100 }}%
+                            </div>
+                        </div>
+                        <p class="card-text">Goal: {{ project[3] }} BDT</p>
+                        <p class="card-text">Raised: {{ project[4] }} BDT</p>
+                        <a href="#" class="btn btn-primary">Donate</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- Your footer content here -->
+
+    <!-- Your JavaScript includes here -->
+</body>
+</html>
