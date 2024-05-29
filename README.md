@@ -1,5 +1,5 @@
 # Donation-for-underprivileged-children-system
-                                                                          Functional Requirements
+                                                                  Functional Requirements
 
 
 Requirement 1:
@@ -73,10 +73,10 @@ Educational resources and success stories
 5) Awareness Campaigns (educate visitors about the challenges faced by underprivileged children and the impact of donations)
 
 
-                                                                            Non-Functional Requirements
+                                                           Non-Functional Requirements
 
-User-friendly interface.
-Authentication and authorization of users done.
-Cross-browser compatibility.
-Technical support available to report any issues.
-Transparency maintained about where donations are being used.
+1) User-friendly interface.
+2) Authentication and authorization of users done.
+3) Cross-browser compatibility.
+4) Technical support available to report any issues.
+5) Transparency maintained about where donations are being used.
