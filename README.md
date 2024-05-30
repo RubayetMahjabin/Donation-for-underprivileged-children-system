@@ -81,3 +81,8 @@ Non-Functional Requirements
 3) Cross-browser compatibility.
 4) Technical support available to report any issues.
 5) Transparency maintained about where donations are being used.
+
+------------------------------------------------------------------
+
+pip install -r requirements.txt
+Run the app.py file
