@@ -1,11 +1,16 @@
 # Donation-for-underprivileged-children-system
-SS/Admin dashboard.png
+
+
+Homepage of the website
+
+![image](https://github.com/RubayetMahjabin/Donation-for-underprivileged-children-system/assets/159466698/a18d2fd0-ca59-4670-8ee2-f8936b21bb79)
 
 
 
 
 
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
 Functional Requirements
 
 
