@@ -1,4 +1,11 @@
 # Donation-for-underprivileged-children-system
+SS/Admin dashboard.png
+
+
+
+
+
+
 Functional Requirements
 
 
